@@ -12,3 +12,4 @@ int main(void){
         mul=a*b;
         printf("la multiplicación de los dos numeros es: %d",mul);
         return 0;
+}
