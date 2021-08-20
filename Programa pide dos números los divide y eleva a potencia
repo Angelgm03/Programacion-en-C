@@ -1,11 +1,15 @@
 #include <stdio.h>
 #include <math.h>
 
-int main(void) {
-	int a,p;
-	printf("Indica el numero base:\n");
-	scanf("%d",&a);
-	p= pow(a, 2);
-	printf("El valor elevado al cuadrado es: %d",p);
-	return 0;
+int main (void) {
+	int a, b, div, pot;
+  printf ("Indica el valor del primer número: \ n");
+  scanf ("% d", & a);
+  printf ("Indica el valor del segundo número: \ n");
+  scanf ("% d", & b);
+  div = a / b;
+  printf ("La división de los dos números es:% d \ n", div);
+  pot = pow (a, b);
+  printf ("Ahora elevados es:% d \ n", pot);
+  return 0;
 }
