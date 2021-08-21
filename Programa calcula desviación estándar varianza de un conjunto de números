@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(void) {
+	float arr[30]={20,19,18,16,19,20,22,21,19,20,22,24,21,26,22,20,19,18,16,19,20,22,21,19,20,22,24,21,26,19};
+	float sum, prom, var, desv;
+	int i=0, d=0;
+	for(i=0; i<30;i++){ 
+	sum=sum+arr[i];
+    prom=sum/30;
+	}
+    d=i;
+    for(d=0;d<30;d++){
+    var+=pow(arr[d]-prom, 2);
+	}
+    desv=pow(var/30,0.5);
+    printf("La varianza del conjunto de numeros es: %.2f\n", var/30);
+    printf("la desviacion estandar es: %.2f", desv);
+    return 0;
+}
