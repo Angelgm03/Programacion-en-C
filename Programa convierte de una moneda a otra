@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+  int main (void) {
+  float MXN, EUR;
+  
+  printf ("CONVERSION DE pesos mexicanos a euros \n");
+  printf ("Indica cantidad de Pesos Mexicanos: $ ");
+  scanf ("%f", &MXN);
+  EUR=MXN/23.34;
+   printf("La cantidad de pesos mexicanos a euros es: %f Euros",EUR );
+   
+   return 0
+}
