@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#define PI 3.141592 
+
+int main(void) {
+	char respuesta [2]; 
+	float A,h,r, vol;
+	printf("COMO CALCULAR EL VOLUMEN DE UN CILINDRO \n");
+	printf("Cuenta con el dato del area? (Escriba si o no):  ");
+	scanf("%2s", respuesta);
+	if (strcmp(respuesta, "no")==0){
+	printf("SACAR AREA DE UN CIRCULO \n");
+	printf("Indica el valor del radio: ");
+	scanf("%f",&r);
+	A=PI*pow( r, 2 );
+	printf("Resultado de la formula: %.2f \n", A);
+	}
+	else{
+	printf("Indica el area: ");
+	scanf("%f",&A);
+	}
+	printf("Indica la altura: ");
+	scanf("%f",&h);
+	vol=A*h;
+	printf("El resultado de la formula para el volumen es: %.2f", vol);
+	return 0;
+}
