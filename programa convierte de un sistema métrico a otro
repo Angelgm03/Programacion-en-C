@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+  int main (void) {
+  float km, mi;
+  
+  printf ("CONVERSION DE kilometros a millas \n");
+  printf ("Indica la cantidad de kilometros:  ");
+  scanf ("%f", &km);
+  mi=km/1.60936;
+  printf("El total de millas es: %.2f millas",mi );
+  return 0; 
+}
