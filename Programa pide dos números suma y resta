@@ -1,17 +1,17 @@
-  #include <stdio.h>
+ #include <stdio.h>
   
   int main (void) {
   int a, b, sum, dif, mul;
   printf ("Indica el valor del primer numero: \n");
   scanf ("%d", &a);
-  printf ("Idica el valor del segundo numero: \n");
+  printf ("Indica el valor del segundo numero: \n");
   scanf ("%d", &b);
   sum=a+b;
-  printf("\n La suma de los dos numeros es %d",sum);
+  printf(" La suma de los dos numeros es %d \n",sum);
   dif= a-b;
-  printf("\n La resta de los dos numeros es %d",dif);
+  printf(" La resta de los dos numeros es %d \n",dif);
   mul= a*b;
-  printf("\n La multiplicacion de los dos numeros es %d",mul);
+  printf(" La multiplicacion de los dos numeros es %d \n",mul);
 return 0;
 
 }
