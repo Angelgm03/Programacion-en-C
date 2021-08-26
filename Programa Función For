@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(void) {
+
+ int i,linea, a;
+ char A[a];
+ 
+printf("Llega al Bad piggie \n");
+printf("Indica el numero de veces que quieras avanzar: ");
+scanf("%d", &a);
+
+for(i=0; i<a; i++){	
+	linea=linea*A[i];
+printf("-", linea);
+}
+	return 0;
+}
