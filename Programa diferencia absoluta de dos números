@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main (void) {
+	int num1, num2,val;
+  printf ("Indica el valor del primer numero: \n");
+  scanf ("%d", &num1);
+  printf ("Indica el valor del segundo numero: \n");
+  scanf ("%d", &num2);
+  if (num1>num2)
+  {
+  val=num1-num2;}
+  else
+  {
+  val=num2-num1;}
+  printf ("El valor absoluto del numero: %d ",val);
+   return 0;
+}
