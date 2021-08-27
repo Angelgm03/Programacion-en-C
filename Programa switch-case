@@ -1,0 +1,46 @@
+#include <stdio.h>
+
+int main(void){
+	float conv;
+	int mxn;
+	int d;
+printf("Conversiones de pesos mexicanos \n");
+printf("Indica la cantidad de pesos a convertir: ");
+scanf("%d", &mxn);
+	
+	printf("Indica la moneda a  convertir: \n 1)Dolares \n 2)Euros \n 3)Yenes \n 4)Libras \n 5)Francos \n 6)Soles \n: ");
+	scanf("%d", &d);
+
+	
+	conv=0;
+	switch (d){
+	case 1: 
+	conv=mxn/20.35;
+	break;	
+	
+	case 2:
+	conv=mxn/23.34;
+	break;
+	
+	case 3:
+	conv=mxn/0.18;
+	break;
+	
+	case 4:
+	conv=mxn/27.90;
+	break;
+	
+	case 5:
+	conv=mxn/22.19;
+	break;
+	
+	case 6:
+	conv=mxn/4.98;
+	break;
+	
+	default:
+	printf ("Opcion no disponible \n");
+	}
+	printf ("El resultado de la conversion de %d pesos fue de: %1.2f",mxn,conv);
+	return 0;
+}
