@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main (void){
+	int A,B,i;
+	int  mayor=0,total=0;
+	printf("Indica el numero que es A: ");
+	scanf("%d",&A);
+	printf("Indica el numero que es B: ");
+	scanf("%d",&B);
+	
+	if(A>B)	mayor=A; else mayor=B;
+	for(i=1; i<=mayor; i++);
+	{
+		total=total+1;
+		printf("%d +",i );
+	
+	}
+	printf("La suma total es: %d",total);
+	return 0;
+}
