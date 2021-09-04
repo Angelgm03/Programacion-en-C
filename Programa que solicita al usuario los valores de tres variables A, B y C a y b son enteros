@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include<math.h>
+
+int main (void){
+	int A,B,C ;
+	float div;
+	printf("Indica el valor entero de A: ");
+	scanf("%d",&A);
+	printf("Indica el valor entero de B: ");
+	scanf("%d",&B);
+	printf("Indica el valor de C: ");
+	scanf("%d",&C);
+	
+	div=C/A;
+	if((C%A==0)&&(A!=0)){
+	printf("El valor de C es divisible entre A \n");
+}
+	else {
+	printf("El valor de C NO es divisible entre A \n");
+}
+	div=C/B;
+	if ((C%B==0)&&(B!=0)){
+	printf("El valor de C es divisible entre B \n");
+}
+	else {
+	printf("El valor de C NO es divisible entre B \n");
+}
+	return 0;
+}
