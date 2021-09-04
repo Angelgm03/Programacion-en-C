@@ -1,0 +1,109 @@
+	int A,B,C,d;
+	
+	printf("Indica el numero que es A: ");
+	scanf("%d",&A);
+	
+	printf("Indica el numero que es B: ");
+	scanf("%d",&B);
+	
+	printf("Indica el numero que es C: ");
+	scanf("%d",&C);
+	
+	printf("Indica la comparacion: \n 1)A>3 \n 2)A>C \n 3)B!=C \n 4)A==3 \n 5)A*B==15 \n 6)C/B<A \n 7)C/B==-10 \n 8)A+B+C==5 \n 9)(A+B==8)&&(A-B==2) \n 10)(A+B==8) && (A-B==6) \n 11)(A>3 && B>3 && C<3) \n: ");
+	scanf("%d", &d);
+	switch (d){
+	
+	case 1:
+	{
+	if (A>3)
+	printf("A(%d) es mayor que 3 \n",A);
+	else
+	printf("A(%d) NO es mayor que 3 \n",A);
+	}
+	break;
+	case 2:
+	{
+	if (A>C)
+	printf("A(%d) es mayor que C(%d) \n",A, C);
+	else
+	printf("A(%d) NO es mayor que C(%d) \n",A, C);
+	}	
+	break;
+	case 3:
+	{
+	if (B!=C)
+	printf("B(%d) es diferente a C(%d) \n",B,C);
+	else
+	printf("B(%d) NO es diferente a C(%d) \n",B,C);
+	}	
+	break;
+	case 4:
+	{
+	if (A==3)
+	printf("A(%d) es igual a 3 \n",A);
+	else
+	printf("A(%d) NO es igual a 3 \n",A);
+	}	
+	break;
+	case 5:
+	{
+	if (A*B==15)
+	printf("La multiplicacion de A(%d)*B(%d) es igual a 15 \n",A,B);
+	else
+	printf("La multiplicacion de A(%d)*B(%d) NO es igual a 15 \n",A,B);
+	}
+	break;
+	case 6:
+	{	
+	if (C/B<A)
+	printf("La division de C(%d)/B(%d) es menor que A(%d) \n",C,B,A);
+	else
+	printf("La division de C(%d)/B(%d)  NO es menor que A(%d) \n",C,B,A);
+	}	
+	break;
+	case 7:
+	{	
+	if (C/B==-10)
+	printf("La division de C(%d)/B(%d) es igual a -10 \n",C,B);
+	else
+	printf("La division de C(%d)/B(%d)  NO es igual -10 \n",C,B);
+	}
+	break;
+	case 8:
+	{	
+	if (A+B+C==5)
+	printf("La suma de A(%d)+B(%d)+C(%d) es igual a 5 \n",A,B,C);
+	else
+	printf("La suma de A(%d)+B(%d)+C(%d) NO es igual a 5 \n",A,B,C);
+	}
+	break;
+	case 9:
+	{
+	if ((A+B==8)&&(A-B==2))
+	printf("La suma de A(%d)+B(%d) es igual a 8 y su resta es igual a 2 \n",A,B);
+	else
+	printf("La suma de A(%d)+B(%d) NO es igual a 8 y su resta NO es igual a 2 \n",A,B);
+	}
+	break;
+	case 10:
+	{
+	if ((A+B==8) && (A-B==6))
+	printf("La suma de A(%d)+B(%d) es igual a 8 y su resta es igual a 6 \n",A,B);
+	else
+	printf("La suma de A(%d)+B(%d) NO es igual a 8 y su resta NO es igual a 6 \n",A,B);
+	}
+	break;
+	case 11:
+	{
+	if (A>3 && B>3 && C<3)
+	printf("A(%d) y B(%d) son mayores que 3 y C(%d) es menor que 3 \n",A,B,C);
+	else
+	printf("A(%d) y B(%d) NO son mayores que 3 y C(%d) NO es menor que 3 \n",A,B,C);
+	}
+	break;
+	default:
+	printf ("Opcion no disponible \n");
+}
+	
+	return 0;
+	}
