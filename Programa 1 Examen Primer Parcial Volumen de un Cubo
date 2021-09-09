@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(void) {
+	float volumen,lado ;
+	printf("VOLUMEN DE UN CUBO \n");
+	printf( "Indica la magnitud de uno de sus lados: " );
+    scanf( "%f", &lado );
+    volumen = pow( lado, 3 );
+    printf( "El volumen del cubo es: %.2f", volumen );
+    return 0;
+}
