@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main (void){
+	
+	int apuesta=0;
+	int x, val;
+	
+	printf("JUEGOS DE AZAR \n");
+	printf("Indica el valor de la apuesta: $");
+	scanf ("%d", &apuesta);
+	val=(apuesta*2);
+	srand ( time(NULL) );
+	x=rand()%2;
+
+	if (x==0){
+	printf("A salido SOL \n");
+	printf("Has ganado, de $%d, el doble es: $ %d\n", apuesta, val);}
+	else{
+	printf("A salido AGUILA \n");	
+	printf("pierdes $%d",apuesta);	}
+	return 0;
+}
