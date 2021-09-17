@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include<time.h>
+int main (void){
+	int i, a, x, linea, rsp;
+	char A[a];
+	srand ( time(NULL) );
+	x=rand()%15;
+	printf("El personaje esta a esta cierta distancia de la pelota... \n");
+	printf("(>-<)/ ");
+	for(i=0; i<x; i++){	
+	linea=linea*A[i];
+	printf("-", linea);
+	}
+	printf(" O");
+	printf("\n Indica la cantidad que creas es la distancia: ");
+	scanf("%d",&rsp);
+	if (x==rsp)
+	printf("Has acertado la distancias es de %d",x);
+	else 
+	printf("Te has equivocado la distancia no es de %d sino de %d",rsp, x);
+return 0;
+}
