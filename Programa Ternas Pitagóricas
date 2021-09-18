@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(void) {
+	int i,j,k,suma,op,ady,hip;
+	int CO,CA,HP;
+	
+	printf ("Ternas Pitagoricas \n");
+	{
+	for(i=1; i<=500; i++)
+	{
+	hip=i*i;
+	for (j=1; j<=500; j++)
+	{
+	op=j*j;
+	for (k=1; k<=500; k++)
+	{
+	ady=k*k;
+	suma=op-ady;						
+	CO= pow(j,2);
+	CA= pow(k,2);
+	HP= pow (i,2);
+	if (suma==hip)
+	{
+	printf ("\n CO: %d, ",j);
+	printf ("CA: %d, ",k);
+	printf ("HIP: %d   ",i);
+	printf ("CO= %d, CA= %d, HIP= %d ",CO,CA,HP );
+	}
+	}
+	}
+	}
+	}
+return 0;
+}
