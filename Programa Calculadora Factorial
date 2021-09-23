@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main (void){
+char sig='s';
+while (sig != 'n')
+    {	
+  int n, i, fact = 1;
+  printf("\n Calculadora Factorial \n");
+  printf("Indica un numero: ");
+  scanf("%d", &n);
+  for (i = n; i > 1; i--){
+    fact = fact * i; }
+  printf("El factorial de %d = %d\n", n, fact);
+  printf("Quiere hacer el calculo para otro numero?  s/n: ");
+  scanf("%s",&sig); getchar();
+  }
+  printf ("Gracias por usar la Calculadora Factorial");
+  return 0;
+}
