@@ -1,0 +1,98 @@
+#include <stdio.h>
+
+int main (void){
+	int conv,s;
+	int dec,num;
+	int bin[999],oct[999],hex[999], i=0;
+	char sig='s';
+	printf("Calculadora de conversiones \n");
+	while (sig != 'n')
+    {	
+	printf("Indica el numero en decimal: ");
+	scanf("%i",&dec);
+
+	printf("Indica a cual base convertir: \n 1)Binario \n 2)Octal \n 3)Hexadecimal \n :");
+	scanf("%d", &s);
+	num=dec;
+	
+	conv=0;
+	switch (s){
+	case 1:
+	while (dec!= 0){
+    bin[i] = dec % 2;
+    dec = dec / 2;
+	i++;
+    }
+    i--; 
+	printf("El numero decimal %d a ",num);
+    printf("binario es: ");   
+    while (i>=0){
+    printf("%i",bin[i]);
+    i--;
+    }
+	break;
+	
+	case 2:
+	while (dec!= 0){
+    oct[i] = dec % 8;
+    dec = dec / 8;
+	i++;
+    }
+    i--; 
+	printf("El numero decimal %d a ",num);
+    printf("octal es: ");   
+    while (i>=0){
+    printf("%i",oct[i]);
+    i--;
+    }
+	break;
+	
+	case 3:
+	while (dec!=0)
+    {
+    hex[i] = dec%16;
+    dec = dec /16;
+    i++;
+    }
+	i--;
+	printf("El numero decimal %d a ",num);
+	printf("hexadecimal es: ");
+    while (i>=0)
+    {
+    switch(hex[i]) 
+    {
+	case 10:
+    printf("A");
+    break;
+	case 11:
+    printf("B");
+    break;
+    case 12:
+	printf("C");
+    break;
+    case 13:
+    printf("D");
+    break;
+    case 14:
+    printf("E");
+    break;
+    case 15:
+    printf("F");
+    break;
+	default:
+    printf("%i",hex[i]);
+    break;
+    } 
+    i--;
+    } 
+	break;
+	
+	default:
+	printf ("Opcion no disponible \n");
+	}
+	printf("\n Quiere convertir otro numero?  s/n: ");
+	scanf("%s",&sig);
+	printf("\n");
+	}
+ return 0;
+}
