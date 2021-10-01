@@ -1,0 +1,12 @@
+#include <stdio.h>
+void display (int age1, int age2)
+{
+	printf("%d\n",age1);
+	printf("%d\n",age2);
+}
+
+int main(){
+	int ageArray[]={20, 18, 24, 21};
+	display(ageArray[0], ageArray[2]);
+	return 0;
+}
