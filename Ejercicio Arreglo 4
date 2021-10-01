@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <conio.h>
+
+int main(){
+	int a=7;
+	int b=7;
+	int matriz[7][7], i,j, vector[7];
+	printf("Matriz de 7x7 \n");
+	for(i=0; i<a; i++)
+	for(j=0; j<b; j++)
+	{
+		printf("indica el valor de la posicion %d, %d: ",i,j);
+		scanf("%d",&matriz[i][j]);
+	}
+	printf("Los valores obtenidos son: \n\n");
+	for(i=0; i<a; i++)
+	{
+	for(j=0; j<b; j++)
+	{
+	printf("%d \t",matriz[i][j]);
+	}
+	printf("\n");
+	}
+	getch();
+	return 0;
+}
