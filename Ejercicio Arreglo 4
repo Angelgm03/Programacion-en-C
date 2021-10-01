@@ -4,7 +4,7 @@
 int main(){
 	int a=7;
 	int b=7;
-	int matriz[7][7], i,j, vector[7];
+	int matriz[7][7], i,j;
 	printf("Matriz de 7x7 \n");
 	for(i=0; i<a; i++)
 	for(j=0; j<b; j++)
@@ -24,3 +24,4 @@ int main(){
 	getch();
 	return 0;
 }
+
