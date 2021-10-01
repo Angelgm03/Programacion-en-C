@@ -2,14 +2,19 @@
 #include <conio.h>
 
 int main(){
-	int a=3;
-	int b=3;
-	int matriz[3][3], i,j, vector[3]={0, 0, 0};
-	int vector2[3]={0, 0, 0};
+	int a;
+	int b;
+	int matriz[100][100], i,j, vector[100];
+	int vector2[100];
+	printf("Indica el numero de filas de la matriz: ");
+	scanf("%d",&a);
+	printf("Indica el numero de columnas de la matriz: ");
+	scanf("%d",&b);
+	
 	for(i=0; i<a; i++)
 	for(j=0; j<b; j++)
 	{
-	printf("indica el valor de la posicion %d, %d: ",i,j);
+	printf("Indica el valor de la posicion %d, %d: ",i,j);
 	scanf("%d",&matriz[i][j]);
 	vector[i]=vector[i]+matriz[i][j];
 	vector2[j]=vector2[j]+matriz[i][j];
