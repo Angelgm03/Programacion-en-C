@@ -1,0 +1,31 @@
+/* del: reconoce una declaración */
+void dcl(void)
+{
+int ns;
+for (ns = 0; gettoken() == '*'; ) /* cuenta *s */
+ns ++;
+dirdcl();
+while (ns-- > 0)
+strcat(out, "apuntador a");
+}
+/* dirdcl: reconoce un declarador directo */
+void dirdcl(void)
+{
+int type;
+if (tokentype == '(') { /* ( del ) */
+dcl();
+if (tokentype != ')')
+printf ("error: falta )\n");
+} else if (tokentype == NAME) /* nombre de variable */
+strcpy (name, token);
+else
+printf("error: nombre o (dcl) esperado\n");
+while ((type = gettoken()) == PARENS || type == BRACKETS)
+if (type == PARENS)
+strcat(out, "función que regresa");
+else {
+strcat(out, " arreglo");
+strcat(out, token);
+strcat(out, "de");
+}
+}
