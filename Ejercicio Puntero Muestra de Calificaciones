@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+float calif[]= {7, 8.3, 8, 9, 10, 10, 9, 9.5}; 
+float *pcalif;
+
+void vertical (int j);
+void horizontal(int j);
+
+int main(){
+	int total=8;
+	vertical(total);
+	horizontal(total);
+	return 0;
+}
+void vertical (int j){
+	int i;
+	pcalif=&calif[0];
+	for (i=0; i<j; i++){
+		printf ("Posicion %d =%.2f\n",i, *(pcalif+i));
+	}
+}
+void horizontal (int j){
+	int i;
+	pcalif=&calif[0];
+	for (i=0; i<j; i++){
+		printf ("Posicion %d=%.2f\t",i, *(pcalif+i));
+	}
+}
