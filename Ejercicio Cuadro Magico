@@ -1,0 +1,55 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(int argc, char *argv[])
+{
+	
+	int n=0;    
+	printf("CUADRADO MAGICO\n");
+	printf("Indica el numero del cuadrado: ");   
+	scanf("%d",&n);
+    int Cuadro[n][n];
+    int cont=0;
+    int x=0;
+    int y=0;
+    int vx=0;
+    int vy=0;
+    int lim=n*n;
+    int limx=n-1;
+    int limy=n-1;
+
+    for( x=0;x<n;x++)
+    {
+       for( y=0;y<n;y++ )
+         {
+              Cuadro[x][y]=0;
+        }
+    }
+    x=n/2;
+    y=0;
+    for(cont=1;cont<=lim;cont++)
+    {
+        Cuadro[y][x] = cont;
+        vx = x;
+        vy = y;
+        x++;
+        if(x>limx)x=0;
+        y--;
+        if(y<0)y=limy;
+        if (Cuadro[y][x]>0)
+        {
+            x=vx;
+            y=vy+1;
+        }
+    }
+    for( x=0;x<n;x++)
+    {
+         for(y=0;y<n;y++)
+         {
+              printf("|%3d|",Cuadro[x][y]);
+         }
+         printf("\n");
+    }
+  return 0;
+}
