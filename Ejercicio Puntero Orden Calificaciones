@@ -3,7 +3,7 @@
 
 int arr[10]={2, 3, 4, 5, 9, 19, 300, 29, 4, 1};
 void ordena (int *p, int N);
-void compara (int *m, int *n);
+int compara (int *m, int *n);
 int main()
 {
 int i=0;
