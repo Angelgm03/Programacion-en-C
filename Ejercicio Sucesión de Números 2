@@ -1,0 +1,21 @@
+#include <stdio.h>
+void imprime3(int);
+int main(){
+int n=0;           
+printf("Indica el numero limite: ");  
+scanf("%d", &n);
+imprime3(n);
+return 0;
+}
+void imprime3(int g){
+int h,i,j;
+for(h=1; h<=g; h++){
+    for(i=g; i>h; i--){
+    printf("\t");
+}
+for(j=h; j>0; j--){
+        printf("%d\t",j);     
+} 
+printf("\n");
+}
+}
