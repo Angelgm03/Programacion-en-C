@@ -1,3 +1,8 @@
+//Universidad Autonoma del Estado de Hidalgo
+//Programacion en C Segundo Examen Parcial
+//Gomez Medina Jose Angel
+//Grupo: 1° 3
+
 #include<stdio.h>
 #include<conio.h>
 void orden( int num[],int d );
