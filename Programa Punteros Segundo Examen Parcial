@@ -1,0 +1,30 @@
+//Universidad Autonoma del Estado de Hidalgo
+//Programacion en C Segundo Examen Parcial
+//Gomez Medina Jose Angel
+//Grupo: 1° 3
+
+#include<stdio.h>
+#include<conio.h>
+void tablaorden(float *a,int n);
+int main(void){
+int i;
+float num[5]={};
+for(i=1; i<=5; i++){
+	printf("Inserte el numero %d: ", i);
+	scanf("%f",&num[i]);
+	}
+	tablaorden(num,5);
+	getch();
+	return 0;
+}
+void tablaorden(float *a,int n){
+int i;
+printf("VARAIBLE\t ");
+printf("CONTENIDO\t ");
+printf("DIRECCION\n");
+for(i=1; i<=5; i++){
+	printf("num \t\t");
+	printf("%.2f \t\t",a[i]);
+	printf("%p\n",&a[i]);
+}
+}
