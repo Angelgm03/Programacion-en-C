@@ -1,0 +1,22 @@
+//Universidad Autonoma del Estado de Hidalgo
+//Programacion en C Segundo Examen Parcial
+//Gomez Medina Jose Angel
+//Grupo: 1° 3
+
+#include <stdio.h>
+
+int main(){
+int a,n=0;
+int i=0;
+float media=0;
+for (a=1; a<=10; a++){
+if((n>=0 && a<=10)){
+printf ("Indica el numero %d: ",a);
+scanf ("%d", &n);
+media=media+n;
+}
+}
+printf("\n");
+printf("La media es: %.2f",media/10);
+return 0;
+}
