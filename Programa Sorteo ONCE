@@ -1,0 +1,11 @@
+#include <stdio.h> 
+int main(){
+	int numero;
+	int ult_cif;
+	printf ("Sorteo ONCE \n");
+	printf("Indica los 5 digitos del numero de sorteo: ");
+	scanf("%d",&numero);
+	ult_cif=numero%10;
+	printf("El ultimo digito del numero es: %d",ult_cif);
+	return 0;
+}
