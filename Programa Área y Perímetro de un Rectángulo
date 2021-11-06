@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main(){
+float base,altura,area,perimetro;
+printf ("Area y Perimetro de un rectangulo \n"); 
+printf ("Indica la base: "); 
+scanf ("%f",&base);
+ printf ("Indica la altura: ");
+ scanf ("%f",&altura);
+area=base*altura;
+perimetro=(2*base)+(2*altura);
+printf ("El area es: %0.2f \n",area); 
+printf ("El perimetro es: %0.2f",perimetro); 
+return 0;
+}
