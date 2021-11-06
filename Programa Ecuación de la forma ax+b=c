@@ -1,0 +1,15 @@
+#include <stdio.h> 
+int main(){
+	int a,b,c;
+	int x;
+	printf("Ecuaciones de la forma ax+b=c \n");
+	printf ("Indica el valor de a: "); 
+	scanf ("%d",&a);
+	printf ("Indica el valor de b: "); 
+	scanf ("%d",&b);
+	printf ("Indica el valor de c: "); 
+	scanf ("%d",&c);
+	x=(c-b)/a;
+	printf ("El valor de x es: %d",x);
+	return 0;
+}
