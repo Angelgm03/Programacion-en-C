@@ -1,0 +1,15 @@
+#include <stdio.h> 
+int main(){
+	int h;
+	int a=4,b=3,c=4;
+	int x=1,y=1,z=1;
+	h=(a>b)||(b==c);
+	printf (" %d \n",h);
+	h=(a!=b)&&(a!=b) || (x==z);
+	printf (" %d \n",h);
+	h=((a>=b)||(x>=z))&&((x!=b)&&(y==z));
+	printf (" %d \n",h);
+	h=(!(a>b))||(x!=b);
+	printf (" %d \n",h);
+	return 0;
+}
