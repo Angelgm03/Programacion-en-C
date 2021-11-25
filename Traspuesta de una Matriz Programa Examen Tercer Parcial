@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main(){
+	int M,N,j,i;
+	printf ("Traspuesta de una Matriz \n");
+	printf("Indica el numero de filas: ");
+	scanf("%d", &M);
+	printf("Indica el numero de columnas: ");
+	scanf("%d", &N);
+	if (M<50 && N<50){
+	int MAT[M][N];
+	
+	printf("Valores de la matriz:\n");
+	
+	for (i=1; i<=M; i++)
+		for (j=1; j<=N; j++){
+		printf("indica el valor de la posicion %d, %d: ",i,j);
+		scanf("%d", &MAT[i][j]);
+	}
+
+	printf("La matriz es:\n");
+	for (i=1; i<=M; i++){
+		for (j=1; j<=N; j++){
+		printf("%d\t", MAT[i][j]);
+		}
+		printf("\n");
+	}
+		printf("La  Traspuesta de la Matriz es:\n");
+	for (i=1; i<=N; i++){
+		for (j=1; j<=M; j++){
+		printf("%d\t",MAT[j][i]);
+		}
+		printf("\n");
+	}
+	}
+	else {
+	printf("error de limite de filas y columnas");
+	}
+	return 0;
+}
